@@ -134,20 +134,7 @@ if (selected == 'Show Image'):
 
 #if __name__ == '__main__':
      #main()        
-    
-#df = pd.read_csv('log.csv')
-#if lossCurveflag:
-    #plotLossCurve(df)
-#if accuracyCurveflag:
-    #plotAccuracyCurve(df)
-#if predictImage:
-    #imagePrediction(magnificationFactorValue)
-#if showPredictedImage:
-    #showResult()
-#st.markdown(hide_menu_style, unsafe_allow_html=True)
-#if predictImage:
-    #if uploadedImageList is not None:
-        #imagePrediction(predictImage,magnificationFactorValue)
+
 
 hide_menu_style = """
         <style>
