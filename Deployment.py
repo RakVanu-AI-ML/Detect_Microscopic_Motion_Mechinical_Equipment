@@ -104,19 +104,7 @@ def plotLossCurve(df):
     st.pyplot(plt)
 
     
-#Accuracy Curve Plot
-def plotAccuracyCurve(df):
-    plt.figure()
-    plt.figure(figsize=(8, 6), dpi=80)
-    plt.plot(df["accuracy"],label='Accuracy')
-    plt.plot(df["val_accuracy"],label='Validation Accuracy')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.title('Accuracy Curve')
-    plt.legend()
-    st.pyplot(plt)
-    
-
+ 
 st.title("Detect Microscopic Motion in Mechanical Equipment using Deep-Learning and smartphones")
 model_loading_state = st.text('Getting things ready! Please wait...')
 model_loading_state.text('The AI is all saved model 20k epoch10 set!')
@@ -131,8 +119,6 @@ with st.sidebar:
 df = pd.read_csv('log.csv')    
 if (selected == 'Loss Curve'):
     plotLossCurve(df)
-if (selected == 'Accuracy Curve'):
-    plotAccuracyCurve(df)
 if (selected == 'Predict Image'):
     imagePrediction()
 if (selected == 'Show Image'):
